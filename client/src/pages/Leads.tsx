@@ -59,8 +59,6 @@ const Leads = () => {
   const leads = data?.data?.leads || [];
   const pagination = data?.data?.pagination;
 
-  if(isLoading) return <Loader />
-
   return (
     <div className="space-y-6">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
