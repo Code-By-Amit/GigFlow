@@ -105,7 +105,7 @@ const Leads = () => {
           onChange={(e) =>
             setSearch(e.target.value)
           }
-          className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 shadow-2xl bg-white dark:bg-zinc-900"
+          className="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 shadow-2xl bg-white dark:text-gray-100 dark:bg-zinc-900"
         />
       </div>
 
