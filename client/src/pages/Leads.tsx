@@ -9,7 +9,7 @@ import useDebounce from "../hooks/useDebounce";
 import useLeads from "../hooks/useLeads";
 
 import ExportButton from "../components/leads/export-button";
-import Loader from "../components/Loading";
+
 
 const Leads = () => {
   const [search, setSearch] = useState("");
