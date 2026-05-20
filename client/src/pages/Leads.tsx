@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Search, Plus } from "lucide-react";
 import LeadModal from "../components/leads/lead-modal";
 import { type Lead } from "../types/lead.types";
-import { useQueryClient } from "@tanstack/react-query";
 import LeadFilters from "../components/leads/lead-filters";
 import LeadsTable from "../components/leads/leads-table";
 import Pagination from "../components/leads/pagination";
