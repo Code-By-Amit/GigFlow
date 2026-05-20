@@ -53,9 +53,6 @@ export const login = asyncHandler(
       throw new ApiError(404, "User not found");
     }
 
-    console.log("User: ", user)
-    console.log("Password: ", password)
-
     const isPasswordValid = await bcrypt.compare(password, user.password);
 
     if (!isPasswordValid) {
