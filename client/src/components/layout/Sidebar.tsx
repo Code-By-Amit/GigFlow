@@ -2,7 +2,6 @@ import {
     LayoutDashboard,
     Users,
     Moon,
-    Sun,
     LogOut,
     X,
 } from "lucide-react";

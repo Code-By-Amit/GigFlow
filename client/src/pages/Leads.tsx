@@ -22,7 +22,6 @@ const Leads = () => {
   const debouncedSearch = useDebounce(search);
   const [open, setOpen] = useState(false);
   const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
-  const queryClient = useQueryClient();
 
   const {
     query,
