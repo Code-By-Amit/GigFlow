@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 app.use(cors({
-    origin: [process.env.CLIENT_URL!, "https://gig-flow-nu-topaz.vercel.app/"],
+    origin: [process.env.CLIENT_URL!, "https://gig-flow-nu-topaz.vercel.app"],
     credentials: true
 }));
 
