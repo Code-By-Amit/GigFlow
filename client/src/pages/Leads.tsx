@@ -9,6 +9,7 @@ import useDebounce from "../hooks/useDebounce";
 import useLeads from "../hooks/useLeads";
 
 import ExportButton from "../components/leads/export-button";
+import Loader from "../components/Loading";
 
 const Leads = () => {
   const [search, setSearch] = useState("");
@@ -57,6 +58,8 @@ const Leads = () => {
 
   const leads = data?.data?.leads || [];
   const pagination = data?.data?.pagination;
+
+  if(isLoading) return <Loader />
 
   return (
     <div className="space-y-6">

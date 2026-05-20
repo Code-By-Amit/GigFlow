@@ -10,6 +10,7 @@ import {
 import StatsCard from "../components/dashboard/stats-card";
 import LeadsChart from "../components/dashboard/leads-chart";
 import { getLeadStats } from "../services/lead.service";
+import Loader from "../components/Loading";
 
 const Dashboard = () => {
   const { data, isLoading } =
@@ -22,9 +23,7 @@ const Dashboard = () => {
 
   if (isLoading) {
     return (
-      <div>
-        Loading dashboard...
-      </div>
+      <Loader />
     );
   }
 
